@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="zh-CN"> 
+<head> 
+<meta charset="UTF-8" />
+<title>南京大学地球科学与工程学院</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/fav.ico" >
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
+<link rel="stylesheet" type="text/css" href="css/skin/bluemonday/jplayer.blue.monday.css" />
+<link rel="stylesheet" type="text/css" href="css/path-style.css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.2.1.js"></script>
+<script type="text/javascript" src="js/path-script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script><!--transition effects-->
+<script type="text/javascript">
+ $(document).ready(function(){ 
+	  var mmm= new PathMenuObj('pathmenu1',{
+		'PathPosition':{position:'fixed',bottom:130,left:100,width:150,height:150},
+		'Path':1,	
+        'Radius':320	
+	  });
+	  
+	  $('#content').after('<div class="mask"></div>');
+		// Delay the fadeOut effect for half a second so you can actually see it
+	  $('.mask').animate({opacity: 1.0}, 5000)
+		// Slowly make the mask dissapear
+      .fadeOut('slow');
+	  
+	  $("a.link").addClass("transition");
+    });	
+</script>
+</head>
+<body>
+<div id="content">
+<div id="home">
+<div class="pad">
+</div>
+</div>
+<div id="toolbar">
+  <div id="homebtn"><a href="index.html"><img /></a></div>
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#coin-slider').coinslider({ width: 1440, height: 900, navigation: false, delay: 5000,effect:'',links: false});
+	});
+</script>
+</body>
+</html>
